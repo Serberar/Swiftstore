@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none; 
+    color: inherit;
+  }
+
+  body{
+    background-color: rgb(233, 231, 231);
+}

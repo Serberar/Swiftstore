@@ -1,0 +1,7 @@
+<div class="memo">
+  <div class="div-image" *ngFor="let card of cards" (click)="vuelta(card)">
+    <img *ngIf="card.seleccionada" [src]="card.img" />
+    <img *ngIf="!card.seleccionada" src="./assets/img/universe.svg" />
+    
+  </div>
+</div>
