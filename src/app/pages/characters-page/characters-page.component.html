@@ -1,1 +1,19 @@
-<div class="main"><p>characters-page works!</p></div>
+<div class="main">
+  <div class="listado">
+    <h2>Listado de productos {{ numeroProductos }}</h2>
+  </div>
+
+
+<div class="contenedor">
+        <div class="productos-div" *ngFor="let producto of datos">  
+        <img class="imagen" src="{{ producto.image }}" alt="{{ producto.name }}"/>
+      <p>{{ producto.name }}</p>
+      <p>{{ producto.description }}</p>
+      <p>{{ producto.price }}</p>
+      <p>{{ producto.stars }}</p>
+      
+        </div>
+
+   </div>
+  </div>
+

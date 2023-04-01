@@ -1,5 +1,5 @@
 .main{
-    display: block;
+
     width: 80vw;
     height: auto;
     background-color: white;
@@ -7,5 +7,45 @@
     position: relative;
     left: 10%;
     margin: 20px 0 20px 0;
-    padding: 20px
+    padding: 20px;
+    gap: 20px;
 }
+
+.contenedor{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.listado {
+    width: 100%;
+  }
+  
+  .productos-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .productos-div:hover {
+    transform: translateY(-5px);
+  }
+  
+  .imagen {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+      
+  .productos-div p {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
