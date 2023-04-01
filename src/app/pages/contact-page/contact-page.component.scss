@@ -1,5 +1,5 @@
 .main{
-    display: block;
+    display: flex;
     width: 80vw;
     height: auto;
     background-color: white;
@@ -7,5 +7,64 @@
     position: relative;
     left: 10%;
     margin: 20px 0 20px 0;
-    padding: 20px
+    padding: 20px;
+    display: flex;
 }
+
+.creacion-div {
+  width: 50%;
+  padding: 20px;
+}
+
+.titulo-div {
+  margin-bottom: 20px;
+}
+
+.input-div {
+  margin-bottom: 10px;
+}
+
+.input-tex {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.preview {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid #FFC970;
+
+}
+
+.preview p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.preview img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.estrellas {
+    font-size: 18px;
+    color: #ffce00;
+  }
+
+  .añadir {
+    background-color: #FFC970;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .añadir:hover {
+    background-color: #f8d9a7;
+  }

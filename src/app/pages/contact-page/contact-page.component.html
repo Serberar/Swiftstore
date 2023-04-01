@@ -1,1 +1,65 @@
-<div class="main"><p>contact-page works!</p></div>
+<div class="main">
+  <div class="creacion-div">
+    <div class="titulo-div">
+      <h2>Creación de producto</h2>
+    </div>
+
+    <div class="input-div">
+      <p>Nombre del producto</p>
+      <input
+        class="input-tex"
+        type="text"
+        [(ngModel)]="name"
+        placeholder="Nombre del producto"
+      />
+    </div>
+
+    <div class="input-div">
+      <p>Precio del producto</p>
+      <input
+        class="input-tex"
+        type="text"
+        [(ngModel)]="price"
+        placeholder="Precio del producto"
+      />
+    </div>
+
+    <div class="input-div">
+      <p>Descripción del producto</p>
+      <input
+      class="input-tex"
+        type="text"
+        [(ngModel)]="description"
+        placeholder="Descripción del producto"
+      />
+    </div>
+
+    <div class="input-div">
+      <p>Ruta de la imágen</p>
+      <input 
+      class="input-tex"
+      type="text" [(ngModel)]="image" placeholder="Url de la imágen" />
+    </div>
+
+    <div class="input-div">
+      <p>opinion del producto</p>
+      <input
+      class="input-tex"
+        type="text"
+        [(ngModel)]="stars"
+        placeholder="valor del 1 a 5"
+      />
+    </div>
+    <button class="añadir" (click)="onSubmit()">Añadir producto</button>
+  </div>
+
+  <div class="preview">
+    <p>preview del producto:</p>
+
+    <img src="{{ image }}" alt="{{ name }}">
+    <p>{{ name }}</p>
+    <p>{{ price }}</p>
+    <p>{{ description }}</p>
+    <p class="estrellas">{{ getStarRating(stars) }}</p>
+  </div>
+</div>

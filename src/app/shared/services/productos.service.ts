@@ -7,12 +7,15 @@ import { Injectable } from '@angular/core';
 export class ProductosService {
 
   constructor(private http: HttpClient) { }
+
+  BBDD= "http://localhost:3000/products";
+
   getproductos(){
-    return this.http.get("http://localhost:3000/products");
+    return this.http.get(this.BBDD);
   }
 
-  postproductos(){
-    return this.http.get("http://localhost:3000/products");
+  postproductos(data:any){
+    return this.http.post(this.BBDD,data);
   }
 
 
