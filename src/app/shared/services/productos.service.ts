@@ -10,4 +10,13 @@ export class ProductosService {
   getproductos(){
     return this.http.get("http://localhost:3000/products");
   }
-}
+
+  postproductos(){
+    return this.http.get("http://localhost:3000/products");
+  }
+
+
+    }
+
+
+

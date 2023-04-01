@@ -1,51 +1,87 @@
 .main{
-
-    width: 80vw;
-    height: auto;
-    background-color: white;
-    border-radius: 5px;
-    position: relative;
-    left: 10%;
-    margin: 20px 0 20px 0;
-    padding: 20px;
-    gap: 20px;
+  width: 80vw;
+  height: auto;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  left: 10%;
+  margin: 20px 0 20px 0;
+  padding: 20px;
+  gap: 20px;
 }
 
 .contenedor{
   display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .listado {
-    width: 100%;
-  }
-  
-  .productos-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .productos-div:hover {
-    transform: translateY(-5px);
-  }
-  
-  .imagen {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-      
-  .productos-div p {
-    margin: 5px 0;
-    font-size: 16px;
-    font-weight: 600;
-  }
+  width: 100%;
+}
+
+.buscador{
+  float: right;
+}
+.productos-div {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 10px;
+}
+
+.productos-div:hover {
+  transform: translateY(-5px);
+}
+
+.producto-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+}
+
+.imagen {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.producto-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  justify-content: space-around;
+}
+
+.nombre {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.descripcion {
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+}
+
+.producto-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.precio {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.estrellas {
+  font-size: 18px;
+  color: #ffce00;
+}
