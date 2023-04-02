@@ -26,6 +26,8 @@
             <div class="producto-footer">
               <p class="precio">{{ producto.price }}€</p>
               <p class="estrellas">{{ getStarRating(producto.stars) }}</p>
+              <p>{{producto.id}}</p>
+              <img src="/assets/img/papelera.png" alt="Eliminar" (click)="deleteproducto(producto)">
             </div>
           </div>
         </div>

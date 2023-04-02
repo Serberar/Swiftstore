@@ -42,6 +42,13 @@ export class CharactersPageComponent {
     }
     this.numeroProductos = this.datos.length;
   }
-}
 
+  deleteproducto(producto: any) {
+    this.ProductosService.deleteproductos(producto).subscribe(
+      () => alert('Artículo borrado'),
+      error => console.error(error)
+    );
+  }
+
+}
 

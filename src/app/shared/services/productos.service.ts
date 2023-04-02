@@ -18,8 +18,11 @@ export class ProductosService {
     return this.http.post(this.BBDD,data);
   }
 
+  deleteproductos(producto: any) {
+    return this.http.delete(`${this.BBDD}/${producto.id}`);
+  }
+
 
     }
-
 
 
