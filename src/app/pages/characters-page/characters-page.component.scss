@@ -23,6 +23,7 @@
 .buscador{
   float: right;
 }
+
 .productos-div {
   width: 200px;
   border: 1px solid #ddd;
@@ -68,12 +69,6 @@
   font-size: 14px;
   color: #777;
   text-align: center;
-}
-
-.producto-footer {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
 }
 
 .precio {

@@ -1,8 +1,17 @@
 <div class="main">
   <div class="creacion-div">
     <div class="titulo-div">
-      <h2>Creación de producto</h2>
+      <h2>Creación / modificación de producto</h2>
     </div>
+    
+    <div class="input-div">
+      <p>Numero de id del producto a modificar</p>
+      <input class="input-tex" type="text" [(ngModel)]="id" placeholder="Número id del producto a modificar"/>
+    </div>
+    <div>
+      <button class="boton" (click)="buscarProducto()">Buscar producto a editar</button>
+    </div>
+
 
     <div class="input-div">
       <p>Nombre del producto</p>
@@ -50,8 +59,10 @@
         placeholder="valor del 1 a 5"
       />
     </div>
-    <button class="añadir" (click)="onSubmit()">Añadir producto</button>
-  </div>
+    <button class="boton" (click)="onSubmit()">Añadir producto</button>
+  
+    <button class="boton" (click)="editarProducto()">Editar producto</button>
+    </div>
 
   <div class="preview">
     <p>preview del producto:</p>

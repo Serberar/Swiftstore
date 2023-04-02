@@ -44,11 +44,15 @@ export class CharactersPageComponent {
   }
 
   deleteproducto(producto: any) {
-    this.ProductosService.deleteproductos(producto).subscribe(
-      () => alert('Artículo borrado'),
-      error => console.error(error)
-    );
+    const confirmacion = confirm(`¿Estás seguro de que deseas eliminar el producto "${producto.name}"?`);
+    if (confirmacion) {
+      this.ProductosService.deleteproductos(producto).subscribe(
+        () => {
+          alert('Artículo borrado');
+          location.reload(); // recarga la página después de borrar el artículo
+        },
+        error => console.error(error)
+      );
+    }
   }
-
 }
-

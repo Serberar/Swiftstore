@@ -1,5 +1,5 @@
 <div class="main">
-  <div class="buscador-div">
+
     <div class="buscador-div">
       <input
         class="buscador"
@@ -9,12 +9,15 @@
         (input)="filtername()"
       />
     </div>
+
     <div class="listado">
       <h2>Listado de productos {{ numeroProductos }}</h2>
     </div>
+
     <div class="contenedor">
       <div class="productos-div" *ngFor="let producto of datos">
         <div class="producto-inner">
+          <p>Producto id: {{producto.id}}</p>
           <img
             class="imagen"
             src="{{ producto.image }}"
@@ -23,10 +26,9 @@
           <div class="producto-texto">
             <p class="nombre">{{ producto.name }}</p>
             <p class="descripcion">{{ producto.description }}</p>
-            <div class="producto-footer">
+            <div class="producto-datos">
               <p class="precio">{{ producto.price }}€</p>
               <p class="estrellas">{{ getStarRating(producto.stars) }}</p>
-              <p>{{producto.id}}</p>
               <img src="/assets/img/papelera.png" alt="Eliminar" (click)="deleteproducto(producto)">
             </div>
           </div>
@@ -34,4 +36,3 @@
       </div>
     </div>
   </div>
-</div>

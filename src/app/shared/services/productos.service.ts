@@ -14,6 +14,10 @@ export class ProductosService {
     return this.http.get(this.BBDD);
   }
 
+  getidproductos(id: string) {
+    return this.http.get(`${this.BBDD}/${id}`);
+  }
+
   postproductos(data:any){
     return this.http.post(this.BBDD,data);
   }
@@ -22,6 +26,9 @@ export class ProductosService {
     return this.http.delete(`${this.BBDD}/${producto.id}`);
   }
 
+   modificarproducto(id: string, data: any) {
+    return this.http.put(`${this.BBDD}/${id}`, data);
+  }
 
     }
 
